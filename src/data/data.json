@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "titulo": "Laptop Lenovo IdeaPad 5",
+    "descripcion": "Laptop con procesador Ryzen 5, 16GB RAM y SSD de 512GB",
+    "categoria": "Tecnologia",
+    "imagen": "https://oechsle.vteximg.com.br/arquivos/ids/9403239-1000-1000/1877169.jpg?v=637920622261600000",
+    "precio": 3200
+  },
+  {
+    "id": 2,
+    "titulo": "Mouse Logitech G203",
+    "descripcion": "Mouse gamer con sensor de alta precisión y luces RGB",
+    "categoria": "Accesorios",
+    "imagen": "https://hiraoka.com.pe/media/catalog/product/1/_/1_premium_1_.jpg?quality=85&bg-color=255,255,255&fit=bounds&height=560&width=700&canvas=700:560",
+    "precio": 120
+  },
+  {
+    "id": 3,
+    "titulo": "Teclado Mecánico Redragon",
+    "descripcion": "Teclado mecánico con switches azules y retroiluminación",
+    "categoria": "Accesorios",
+    "imagen": "https://media.falabella.com/falabellaPE/114431617_04/w=1500,h=1500,fit=cover",
+    "precio": 250
+  },
+  {
+    "id": 4,
+    "titulo": "Monitor Samsung 24 pulgadas",
+    "descripcion": "Monitor Full HD con panel IPS y 75Hz",
+    "categoria": "Tecnologia",
+    "imagen": "https://cdn.memorykings.pe/files/2024/11/25/350805-MK037650A.jpg",
+    "precio": 850
+  },
+  {
+    "id": 5,
+    "titulo": "Audífonos Sony WH-CH510",
+    "descripcion": "Audífonos inalámbricos con buena batería y sonido claro",
+    "categoria": "Audio",
+    "imagen": "https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/5084/PMP20001084249/imagen2-1.jpeg",
+    "precio": 180
+  }
+]
