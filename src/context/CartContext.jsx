@@ -19,15 +19,22 @@ export function CartProvider({ children }) {
 
   const removeItem = (id) => setItems(prev => prev.filter(i => i.id !== id))
 
-  const updateQty = (id, qty) => {
-    if (qty <= 0) { removeItem(id); return }
-    setItems(prev => prev.map(i => i.id === id ? { ...i, qty } : i))
-  }
+  const updateQty = (id, updater) => {
+  setItems(prev =>
+    prev
+      .map(i => {
+        if (i.id !== id) return i
+        const newQty = typeof updater === 'function' ? updater(i) : updater
+        return newQty <= 0 ? null : { ...i, qty: newQty }
+      })
+      .filter(Boolean)
+  )
+}
 
   const clearCart = () => setItems([])
 
   const totalItems = items.reduce((sum, i) => sum + i.qty, 0)
-  const subtotal = items.reduce((sum, i) => sum + i.precio * i.qty, 0)
+  const subtotal = items.reduce((sum, i) => sum + Number(i.precio) * i.qty, 0)
   const envio = subtotal > 0 && subtotal < 200 ? 15 : 0
   const total = subtotal + envio
 

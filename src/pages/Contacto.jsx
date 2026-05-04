@@ -46,41 +46,6 @@ const Contacto = () => {
   return (
     <div className="container">
       <div className="contact-layout">
-        <aside className="contact-info page-card">
-          <h1 className="title">Contacto</h1>
-          <p className="subtitle">Escríbenos y te responderemos a la brevedad.</p>
-          <div className="contact-details">
-            <div className="contact-detail-item">
-              <span className="contact-detail-icon">📍</span>
-              <div>
-                <p className="contact-detail-label">Dirección</p>
-                <p className="contact-detail-value">Av. Principal 123, Lima, Perú</p>
-              </div>
-            </div>
-            <div className="contact-detail-item">
-              <span className="contact-detail-icon">📧</span>
-              <div>
-                <p className="contact-detail-label">Email</p>
-                <p className="contact-detail-value">contacto@tienda.com</p>
-              </div>
-            </div>
-            <div className="contact-detail-item">
-              <span className="contact-detail-icon">📞</span>
-              <div>
-                <p className="contact-detail-label">Teléfono</p>
-                <p className="contact-detail-value">+51 987 654 321</p>
-              </div>
-            </div>
-            <div className="contact-detail-item">
-              <span className="contact-detail-icon">🕐</span>
-              <div>
-                <p className="contact-detail-label">Horario</p>
-                <p className="contact-detail-value">Lun – Vie: 9:00 am – 6:00 pm</p>
-              </div>
-            </div>
-          </div>
-        </aside>
-
         <section className="page-card contact-form-section">
           {enviado ? (
             <div className="contact-success">

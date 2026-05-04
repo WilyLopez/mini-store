@@ -10,9 +10,9 @@ const CartItem = ({ item }) => {
         <p className="cart-item-title">{item.titulo}</p>
         <p className="cart-item-price">s/. {item.precio}</p>
         <div className="cart-item-qty">
-          <button onClick={() => updateQty(item.id, item.qty - 1)} aria-label="Reducir cantidad">−</button>
+          <button onClick={() => updateQty(item.id, i => i.qty - 1)}aria-label="Reducir cantidad">−</button>
           <span>{item.qty}</span>
-          <button onClick={() => updateQty(item.id, item.qty + 1)} aria-label="Aumentar cantidad">+</button>
+          <button onClick={() => updateQty(item.id, i => i.qty + 1)}aria-label="Aumentar cantidad">+</button>
         </div>
       </div>
       <div className="cart-item-right">
